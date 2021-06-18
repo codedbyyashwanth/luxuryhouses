@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination for Tourists</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon Link -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-cont">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="/code/logo.png" alt="">
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>Pricing</li>
+                        <li>Team</li>
+                        <li>About Me</li>
+                        <button>Contact</button>
+                    </ul>
+                </nav>
+                <div id="menu">
+                    <ion-icon name="grid"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('nav');
+
+        window.addEventListener("resize", function () {
+            if (window.outerWidth > 800) 
+                nav.style.display = "block";
+            else {
+                if (!menu.classList.contains('active')) {
+                    nav.style.display = "none";
+                }
+            }
+        });
+
+        menu.addEventListener('click', () => {
+            if (nav.style.display == "block") {
+                nav.style.display = "none";
+                menu.classList.remove("active");
+            }
+            else {
+                nav.style.display = "block";
+                menu.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

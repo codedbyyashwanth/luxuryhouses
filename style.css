@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 70vh;
+  background-position: top;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.3))), url("https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80");
+  background-image: linear-gradient(to right bottom rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80");
+}
+
+header .nav-cont {
+  width: 100%;
+  z-index: 10;
+}
+
+header .nav-cont .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 30px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+header .nav-cont .nav-bar .logo img {
+  width: 65px;
+  cursor: pointer;
+}
+
+header .nav-cont .nav-bar nav ul li {
+  cursor: pointer;
+  padding: 6px 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header .nav-cont .nav-bar nav ul li:hover {
+  color: #D38144;
+}
+
+header .nav-cont .nav-bar ul button {
+  padding: 8px 20px;
+  margin: 0px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #D38144;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+header .nav-cont .nav-bar ul button:hover {
+  background-color: #D38144;
+}
+
+header .nav-cont .nav-bar #menu {
+  font-size: 25px;
+  display: none;
+}
+
+header .nav-cont .nav-bar .active {
+  display: block;
+  color: #D38144;
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  header .nav-cont .nav-bar {
+    margin: 0px 20px;
+    padding-top: 20px;
+  }
+  header .nav-cont .nav-bar nav ul li {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .nav-cont .nav-bar nav {
+    display: none;
+    width: 90%;
+    padding: 20px 0px;
+    position: absolute;
+    top: 85px;
+    border-radius: 10px;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    right: 50%;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.4)));
+    background: linear-gradient(to bottom right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+  header .nav-cont .nav-bar nav ul li {
+    display: block;
+    line-height: 2;
+  }
+  header .nav-cont .nav-bar nav ul button {
+    margin-top: 20px;
+  }
+  header .nav-cont .nav-bar #menu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
