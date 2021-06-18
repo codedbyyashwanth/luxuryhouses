@@ -103,10 +103,8 @@ header .nav-cont .nav-bar .active {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     right: 50%;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.4)));
-    background: linear-gradient(to bottom right rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: #1d1a1a;
+    background-color: #F0EFF4;
   }
   header .nav-cont .nav-bar nav ul li {
     display: block;
