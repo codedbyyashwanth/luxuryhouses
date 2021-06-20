@@ -236,10 +236,6 @@ main .main-primary-content .primary-content .contents .owner span {
   font-weight: 600;
 }
 
-main .secondary-content {
-  position: relative;
-}
-
 main .main-secondary-content {
   color: #fff;
   display: -ms-grid;
@@ -378,5 +374,117 @@ main .main-secondary-content .profiles .profile .content p {
   main .main-secondary-content .profiles .profile .content p {
     padding-bottom: 20px;
   }
+}
+
+main .mail-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+main .mail-me .content {
+  padding: 20px;
+}
+
+main .mail-me .content h1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #161515;
+}
+
+main .mail-me .content p {
+  margin-top: 20px;
+  max-width: 550px;
+  color: #949494;
+}
+
+main .mail-me .input input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  margin-right: 10px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: 2px solid #D38144;
+}
+
+main .mail-me .input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #D38144;
+  color: #fff;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #d38244af;
+          box-shadow: 0px 0px 10px #d38244af;
+}
+
+footer {
+  height: 200px;
+  background-color: #1b1a1a;
+}
+
+footer .follow-us {
+  text-align: center;
+}
+
+footer .follow-us h1 {
+  color: #fff;
+  padding-top: 50px;
+  font-weight: 600;
+}
+
+footer .follow-us .social-links ion-icon {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+footer .follow-us .social-links #fb:hover {
+  color: #0296ff;
+}
+
+footer .follow-us .social-links #ig:hover {
+  color: #ff02ff;
+}
+
+footer .follow-us .social-links #li:hover {
+  color: #0072c4;
+}
+
+footer .follow-us .social-links #tw:hover {
+  color: #0062a8;
+}
+
+footer .follow-us .social-links #yt:hover {
+  color: #ff0217;
+}
+
+footer .author {
+  text-align: center;
+  margin-top: 25px;
+}
+
+footer .author span {
+  color: #fff;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
