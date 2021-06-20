@@ -388,7 +388,8 @@ main .mail-me {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -413,6 +414,7 @@ main .mail-me .input input {
   width: 300px;
   height: 40px;
   outline: none;
+  margin-bottom: 10px;
   margin-right: 10px;
   padding-left: 10px;
   border-radius: 20px;
@@ -432,7 +434,7 @@ main .mail-me .input button {
 }
 
 footer {
-  height: 200px;
+  padding-bottom: 10px;
   background-color: #1b1a1a;
 }
 
