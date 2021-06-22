@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Houses to live your Life to the Fullest</title>
+    <link rel="stylesheet" href="pricing.css">
+    <!-- Icon Link -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="nav-cont">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="Active" href="pricing.html">Pricing</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <button>Contact</button>
+                    </ul>
+                </nav>
+                <div id="menu">
+                    <ion-icon name="grid"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="content">
+                <h1>Choose your Offer</h1>
+                <span>The home should be treasure chest of your golden memories</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="text-content">
+            <p>
+                To get started, you will need to choose a plan for your needs. You have Free Unlimited Updates and Premium Support on
+                each package.
+            </p>
+        </div>
+
+        <div class="pricing-cards">
+            <div class="cards">
+                <span>Starter</span>
+                <ion-icon class="start" name="person"></ion-icon>
+                <span>$100</span> <hr>
+                <span>24 hours</span> <hr>
+                <span>No on-site visit</span>
+                <button class="b1">Pay Now</button>
+            </div>
+            <div class="cards">
+                <span>Professional</span>
+                <ion-icon class="prof" name="briefcase"></ion-icon>
+                <span>$1000</span> <hr>
+                <span>48 hours</span> <hr>
+                <span>on-site visit</span>
+                <button class="b2">Pay Now</button>
+            </div>
+            <div class="cards">
+                <span>Basic</span>
+                <ion-icon class="basic" name="laptop"></ion-icon>
+                <span>$500</span> <hr>
+                <span>24 hours</span> <hr>
+                <span>on-site visit</span>
+                <button class="b3">Pay Now</button>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="content">
+                <h1>Our Projects</h1>
+                <p>
+                    Here are some of our projects delivered to clients all over the world. 
+                </p>
+            </div>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="follow-us">
+            <h1>Follow us on:</h1>
+            <div class="social-links">
+                <ion-icon id="fb" name="logo-facebook"></ion-icon>
+                <ion-icon id="ig" name="logo-instagram"></ion-icon>
+                <ion-icon id="li" name="logo-linkedin"></ion-icon>
+                <ion-icon id="tw" name="logo-twitter"></ion-icon>
+                <ion-icon id="yt" name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+        <div class="author">
+            <span>© 2021, Powered by RoborosX. Developed by Yashwanth </span>
+        </div>
+    </footer>
+    
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('nav');
+
+        window.addEventListener("resize", function () {
+            if (window.outerWidth > 800)
+                nav.style.display = "block";
+            else {
+                if (!menu.classList.contains('active')) {
+                    nav.style.display = "none";
+                }
+            }
+        });
+
+        menu.addEventListener('click', () => {
+            if (nav.style.display == "block") {
+                nav.style.display = "none";
+                menu.classList.remove("active");
+            }
+            else {
+                nav.style.display = "block";
+                menu.classList.add("active");
+            }
+        });
+    </script>
+
+
+</body>
+</html>
