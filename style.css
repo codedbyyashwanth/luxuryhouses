@@ -132,12 +132,14 @@ header .nav-cont .nav-bar .active {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     right: 50%;
-    color: #1d1a1a;
-    background-color: #F0EFF4;
+    background-color: #FFF;
   }
   header .nav-cont .nav-bar nav ul li {
     display: block;
     line-height: 2;
+  }
+  header .nav-cont .nav-bar nav li a {
+    color: #1d1a1a;
   }
   header .nav-cont .nav-bar nav ul button {
     margin-top: 20px;
